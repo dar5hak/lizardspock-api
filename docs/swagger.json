@@ -1,0 +1,156 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "lizardspock API",
+        "contact": {},
+        "license": {
+            "name": "Apache 2.0"
+        },
+        "version": "1.0"
+    },
+    "basePath": "/api/v1",
+    "paths": {
+        "/play/1p": {
+            "get": {
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "play"
+                ],
+                "summary": "Play against the system",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "your choice: one of rock, paper, scissors, lizard or spock",
+                        "name": "choice",
+                        "in": "query",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/game.OnePlayerGameResult"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/game.OnePlayerGameError"
+                        }
+                    }
+                }
+            }
+        },
+        "/play/2p": {
+            "get": {
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "play"
+                ],
+                "summary": "Play a two-player game",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "player 1's choice: one of rock, paper, scissors, lizard or spock",
+                        "name": "p1Choice",
+                        "in": "query",
+                        "required": true
+                    },
+                    {
+                        "type": "string",
+                        "description": "player 2's choice: one of rock, paper, scissors, lizard or spock",
+                        "name": "p2Choice",
+                        "in": "query",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/game.TwoPlayerGameResult"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/game.TwoPlayerGameError"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "game.OnePlayerGameError": {
+            "type": "object",
+            "properties": {
+                "error": {
+                    "type": "string"
+                },
+                "userChoice": {
+                    "type": "string"
+                }
+            }
+        },
+        "game.OnePlayerGameResult": {
+            "type": "object",
+            "properties": {
+                "didYouWin": {
+                    "type": "string"
+                },
+                "message": {
+                    "type": "string"
+                },
+                "systemChoice": {
+                    "type": "string"
+                },
+                "userChoice": {
+                    "type": "string"
+                }
+            }
+        },
+        "game.TwoPlayerGameError": {
+            "type": "object",
+            "properties": {
+                "error": {
+                    "type": "string"
+                },
+                "p1Choice": {
+                    "type": "string"
+                },
+                "p2Choice": {
+                    "type": "string"
+                }
+            }
+        },
+        "game.TwoPlayerGameResult": {
+            "type": "object",
+            "properties": {
+                "message": {
+                    "type": "string"
+                },
+                "p1Choice": {
+                    "type": "string"
+                },
+                "p2Choice": {
+                    "type": "string"
+                },
+                "winner": {
+                    "type": "integer"
+                }
+            }
+        }
+    }
+}

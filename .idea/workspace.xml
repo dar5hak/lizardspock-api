@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="78203986-398a-4da8-8ed5-f217a82b672c" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go Application" />
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" path="$USER_HOME$/.local/share/umake/go/go-lang" />
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="ProjectId" id="1ZP7jXXDiSOBVTZNy3refEER8yO" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Module.GOPATH.is.expanded" value="false" />
+    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/model/game/1p.go" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Go" />
+  </component>
+  <component name="RecentsManager">
+    <key name="GoMoveDeclarationDialog.RECENT_KEY">
+      <recent name="$PROJECT_DIR$/model/game" />
+      <recent name="$PROJECT_DIR$/model" />
+      <recent name="$PROJECT_DIR$/controller" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/model/game" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="go build lizardspock" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="lizardspock-api" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <package value="lizardspock" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build lizardspock" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+    <proxy>direct</proxy>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="278" y="60" width="800" height="680" key="#GOPATH" timestamp="1584742623471">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="278" y="60" width="800" height="680" key="#GOPATH/0.30.1366.738@0.30.1366.738" timestamp="1584742623471" />
+    <state x="278" y="60" width="800" height="680" key="#GOROOT" timestamp="1584729065005">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="278" y="60" width="800" height="680" key="#GOROOT/0.30.1366.738@0.30.1366.738" timestamp="1584729065005" />
+    <state x="278" y="60" width="800" height="680" key="#Go_Modules_(vgo)" timestamp="1584729097636">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="278" y="60" width="800" height="680" key="#Go_Modules_(vgo)/0.30.1366.738@0.30.1366.738" timestamp="1584729097636" />
+    <state x="278" y="60" width="800" height="680" key="#Notifications" timestamp="1584816067792">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="278" y="60" width="800" height="680" key="#Notifications/0.30.1366.738@0.30.1366.738" timestamp="1584816067792" />
+    <state x="278" y="60" width="800" height="680" key="#Plugins" timestamp="1584815821927">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="278" y="60" width="800" height="680" key="#Plugins/0.30.1366.738@0.30.1366.738" timestamp="1584815821927" />
+    <state x="141" y="57" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585744584150">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="141" y="57" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.30.1366.738@0.30.1366.738" timestamp="1585744584150" />
+    <state x="461" y="158" width="424" height="487" key="FileChooserDialogImpl" timestamp="1585743956506">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="461" y="158" width="424" height="487" key="FileChooserDialogImpl/0.30.1366.738@0.30.1366.738" timestamp="1585743956506" />
+    <state width="1320" height="173" key="GridCell.Tab.0.bottom" timestamp="1585757861191">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state width="1320" height="173" key="GridCell.Tab.0.bottom/0.30.1366.738@0.30.1366.738" timestamp="1585757861191" />
+    <state width="1320" height="173" key="GridCell.Tab.0.center" timestamp="1585757861191">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state width="1320" height="173" key="GridCell.Tab.0.center/0.30.1366.738@0.30.1366.738" timestamp="1585757861191" />
+    <state width="1320" height="173" key="GridCell.Tab.0.left" timestamp="1585757861190">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state width="1320" height="173" key="GridCell.Tab.0.left/0.30.1366.738@0.30.1366.738" timestamp="1585757861190" />
+    <state width="1320" height="173" key="GridCell.Tab.0.right" timestamp="1585757861191">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state width="1320" height="173" key="GridCell.Tab.0.right/0.30.1366.738@0.30.1366.738" timestamp="1585757861191" />
+    <state x="292" y="30" width="992" height="733" key="SettingsEditor" timestamp="1585749883571">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="292" y="30" width="992" height="733" key="SettingsEditor/0.30.1366.738@0.30.1366.738" timestamp="1585749883571" />
+    <state x="642" y="135" width="434" height="578" key="com.goide.refactor.move.GoMoveDeclarationDialog" timestamp="1585744427003">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="642" y="135" width="434" height="578" key="com.goide.refactor.move.GoMoveDeclarationDialog/0.30.1366.738@0.30.1366.738" timestamp="1585744427003" />
+    <state x="376" y="226" key="com.intellij.ide.util.TipDialog" timestamp="1585498493737">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="376" y="226" key="com.intellij.ide.util.TipDialog/0.30.1366.738@0.30.1366.738" timestamp="1585498493737" />
+    <state x="428" y="30" width="500" height="738" key="refactoring.ChangeSignatureDialog" timestamp="1585743402652">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="428" y="30" width="500" height="738" key="refactoring.ChangeSignatureDialog/0.30.1366.738@0.30.1366.738" timestamp="1585743402652" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1585749710110">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.30.1366.738@0.30.1366.738" timestamp="1585749710110" />
+  </component>
+</project>

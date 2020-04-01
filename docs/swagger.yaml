@@ -1,0 +1,103 @@
+basePath: /api/v1
+definitions:
+  game.OnePlayerGameError:
+    properties:
+      error:
+        type: string
+      userChoice:
+        type: string
+    type: object
+  game.OnePlayerGameResult:
+    properties:
+      didYouWin:
+        type: string
+      message:
+        type: string
+      systemChoice:
+        type: string
+      userChoice:
+        type: string
+    type: object
+  game.TwoPlayerGameError:
+    properties:
+      error:
+        type: string
+      p1Choice:
+        type: string
+      p2Choice:
+        type: string
+    type: object
+  game.TwoPlayerGameResult:
+    properties:
+      message:
+        type: string
+      p1Choice:
+        type: string
+      p2Choice:
+        type: string
+      winner:
+        type: integer
+    type: object
+info:
+  contact: {}
+  license:
+    name: Apache 2.0
+  title: lizardspock API
+  version: "1.0"
+paths:
+  /play/1p:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: 'your choice: one of rock, paper, scissors, lizard or spock'
+        in: query
+        name: choice
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/game.OnePlayerGameResult'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/game.OnePlayerGameError'
+      summary: Play against the system
+      tags:
+      - play
+  /play/2p:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: 'player 1''s choice: one of rock, paper, scissors, lizard or
+          spock'
+        in: query
+        name: p1Choice
+        required: true
+        type: string
+      - description: 'player 2''s choice: one of rock, paper, scissors, lizard or
+          spock'
+        in: query
+        name: p2Choice
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/game.TwoPlayerGameResult'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/game.TwoPlayerGameError'
+      summary: Play a two-player game
+      tags:
+      - play
+swagger: "2.0"
