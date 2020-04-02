@@ -4,7 +4,9 @@ import (
 	"fmt"
 	"lizardspock/controller"
 	_ "lizardspock/docs"
+	"log"
 	"math/rand"
+	"os"
 	"time"
 
 	"github.com/swaggo/gin-swagger/swaggerFiles"
@@ -12,9 +14,6 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/swaggo/gin-swagger"
 )
-
-// gin-swagger middleware
-// swagger embed files
 
 func init() {
 	rand.Seed(time.Now().Unix())
@@ -36,15 +35,21 @@ func setupRouter() *gin.Engine {
 	return r
 }
 
-// @title lizardspock API
+// @title lizardspock
 // @version 1.0
 // @license.name Apache 2.0
 
 // @BasePath /api/v1
 
 func main() {
+	port := os.Getenv("PORT")
+
+	if port == "" {
+		log.Fatal("$PORT must be set")
+	}
+
 	r := setupRouter()
-	err := r.Run(":8080")
+	err := r.Run(":" + port)
 	if err != nil {
 		fmt.Println(err)
 	}
